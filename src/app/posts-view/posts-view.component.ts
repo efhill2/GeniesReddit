@@ -16,10 +16,13 @@ export class PostsViewComponent implements OnInit {
   ngOnInit(): void {
 
     this.redditService.getPosts().subscribe(
+      (data: Posts) =>{
 
-      (data: Posts) =>
-        
+        debugger;
         this.posts = data
+      }
+        
+        
        
 
     );
